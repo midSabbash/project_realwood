@@ -1,0 +1,85 @@
+// standard button
+.std-btn {
+  padding: 10px 20px;
+  color: #659a00;
+  border: 1px solid #659a00;
+  border-radius: 2px;
+  background: transparent;
+  &:hover {
+    color: #fff;
+    background: #659a00;
+  }
+  &.green {
+    padding: 10px 20px;
+    color: #fff;
+    background: #659a00;
+    border: 1px solid #659a00;
+    &:hover {
+      background: #fff;
+      color: #659a00;
+    }
+  }
+}
+
+//active page
+.active {
+  a {
+    border-bottom: 2px solid #6bc729;
+  }
+}
+
+//button style
+.navbar-toggle {
+  margin: 5px;
+  width: 32px;
+  height: 30px;
+  padding: 0;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  transition-delay: 0.3s;
+  .icon-bar {
+    background: #6d6b6b;
+    position: absolute;
+    width: 100%;
+    z-index: 99999;
+    height: 2px;
+    border-radius: 2px;
+    &:first-child {
+      top: 0;
+    }
+    &:nth-child(2) {
+      top: 9px;
+    }
+    &:last-child {
+      top: 22px;
+    }
+  }
+}
+.navbar-toggle.collapsed {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  .icon-bar {
+    background: #6d6b6b;
+    position: absolute;
+    width: 100%;
+    z-index: 99999;
+    height: 2px;
+    border-radius: 2px;
+    &:first-child {
+      top: 0;
+    }
+    &:nth-child(2) {
+      top: 9px;
+    }
+    &:last-child {
+      top: 22px;
+    }
+  }
+}
+
