@@ -77,10 +77,11 @@
     <div class="our-examples">
         <div class="container">
             <div class="row">
-                <div class="col-sm-9">
+
+                <div class="col-sm-9 col-xs-12">
                     <div class="slide">
                         <ul>
-                            <li id="slide-1"><img src="img/slide-1.jpg" alt="" data-aim="slide1"></li>
+                            <li id="slide-1" class="current-slide"><img src="img/slide-1.jpg" alt=""></li>
                             <li id="slide-2"><img src="img/slide-2.jpg" alt=""></li>
                             <li id="slide-3"><img src="img/slide-3.jpg" alt=""></li>
                         </ul>
@@ -88,19 +89,413 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="mini-slide">
-                        <ul>
-                            <li id="slide-11"><img src="img/slide-1.jpg" alt="">
-                                <div class="when">До</div>
-                            </li>
-                            <li id="slide-22"><img src="img/slide-2.jpg" alt="">
-                                <div class="when">Во время</div>
-                            </li>
-                            <li id="slide-33"><img src="img/slide-3.jpg" alt="">
-                                <div class="when">После</div>
-                            </li>
-                        </ul>
+                    <div class="sm-slide">
+                        <div class="slide-selector current-sm-slide" id="item-1" data-aim="slide">
+                            <img src="img/slide-1.jpg" alt="">
+                            <div class="when">До</div>
+                        </div>
+
+                        <div class="slide-selector" id="item-2" data-aim="slide">
+                            <img src="img/slide-2.jpg" alt="">
+                            <div class="when">Во время</div>
+                        </div>
+
+                        <div class="slide-selector" id="item-3" data-aim="slide">
+                            <img src="img/slide-3.jpg" alt="">
+                            <div class="when">После</div>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="our-production">
+        <div class="container">
+            <div class="title">
+                <span>Наша продукция</span>
+                <a href="#" class="std-btn">Перейти в каталог</a>
+            </div>
+            <div class="row">
+
+                <div class="col-md-3 col-xs-6">
+                    <div class="product">
+                        <div class="product-icon vertical-align">
+                            <div class="icon-flor icons-bg"></div>
+                        </div>
+                        <div class="product-text">
+                            <span>Напольное <br> покрытие</span>
+                            <p>Половая и паркетная доска, палубная и терассная доска</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6">
+                    <div class="product">
+                        <div class="product-icon vertical-align">
+                            <div class="icon-wall icons-bg"></div>
+                        </div>
+                        <div class="product-text">
+                            <span>Стеновые <br> изделия</span>
+                            <p>Евровагонка, имитация бруса, блок хаус, планкен</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6">
+                    <div class="product">
+                        <div class="product-icon vertical-align">
+                            <div class="icon-outside icons-bg"></div>
+                        </div>
+                        <div class="product-text">
+                            <span>Наружная <br> отделка</span>
+                            <p>Имитация бруса, вагонка штиль</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6">
+                    <div class="product">
+                        <div class="product-icon vertical-align">
+                            <div class="icon-termowood icons-bg"></div>
+                        </div>
+                        <div class="product-text">
+                            <span>Термодревесина</span>
+                            <p>Вагонка для отделки бани и сауны</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="special-offer">
+        <div class="container">
+            <div class="title">
+                <span>Спецпредложения</span>
+                <a href="#" class="std-btn">Все спецпредложения</a>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <div class="offer">
+                        <div class="offer-img">
+                            <img src="img/special-offer-img1.jpg" alt="">
+                            <div class="sell">-25<sup>%</sup></div>
+                        </div>
+                        <div class="offer-text">
+                            <p>Массивная паркетная доска
+                                из отменных сортов дуба</p>
+                            <span class="current-price">433 руб/м<sup>2</sup></span>
+                            <span class="old-price">546 руб/м<sup>2</sup></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="offer">
+                        <div class="offer-img">
+                            <img src="img/special-offer-img2.jpg" alt="">
+                            <div class="sell">-30<sup>%</sup></div>
+                        </div>
+                        <div class="offer-text">
+                            <p>Паркетная евродоска 1 класса</p>
+                            <span class="current-price">1500 руб/м<sup>2</sup></span>
+                            <span class="old-price">2546 руб/м<sup>2</sup></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="offer">
+                        <div class="offer-img">
+                            <img src="img/special-offer-img3.jpg" alt="">
+                            <div class="sell">-25<sup>%</sup></div>
+                        </div>
+                        <div class="offer-text">
+                            <p>Массивная паркетная доска
+                                из отменных сортов дуба</p>
+                            <span class="current-price">433 руб/м<sup>2</sup></span>
+                            <span class="old-price">546 руб/м<sup>2</sup></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="offer">
+                        <div class="offer-img">
+                            <img src="img/special-offer-img4.jpg" alt="">
+                            <div class="sell">-30<sup>%</sup></div>
+                        </div>
+                        <div class="offer-text">
+                            <p>Паркетная евродоска 1 класса</p>
+                            <span class="current-price">1500 руб/м<sup>2</sup></span>
+                            <span class="old-price">2546 руб/м<sup>2</sup></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="offer">
+                        <div class="offer-img">
+                            <img src="img/special-offer-img5.jpg" alt="">
+                            <div class="sell">-25<sup>%</sup></div>
+                        </div>
+                        <div class="offer-text">
+                            <p>Массивная паркетная доска
+                                из отменных сортов дуба</p>
+                            <span class="current-price">433 руб/м<sup>2</sup></span>
+                            <span class="old-price">546 руб/м<sup>2</sup></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="offer">
+                        <div class="offer-img">
+                            <img src="img/special-offer-img6.jpg" alt="">
+                            <div class="sell">-30<sup>%</sup></div>
+                        </div>
+                        <div class="offer-text">
+                            <p>Паркетная евродоска 1 класса</p>
+                            <span class="current-price">1500 руб/м<sup>2</sup></span>
+                            <span class="old-price">2546 руб/м<sup>2</sup></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="offer">
+                        <div class="offer-img">
+                            <img src="img/special-offer-img7.jpg" alt="">
+                            <div class="sell">-25<sup>%</sup></div>
+                        </div>
+                        <div class="offer-text">
+                            <p>Массивная паркетная доска
+                                из отменных сортов дуба</p>
+                            <span class="current-price">433 руб/м<sup>2</sup></span>
+                            <span class="old-price">546 руб/м<sup>2</sup></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="offer">
+                        <div class="offer-img">
+                            <img src="img/special-offer-img8.jpg" alt="">
+                            <div class="sell">-30<sup>%</sup></div>
+                        </div>
+                        <div class="offer-text">
+                            <p>Паркетная евродоска 1 класса</p>
+                            <span class="current-price">1500 руб/м<sup>2</sup></span>
+                            <span class="old-price">2546 руб/м<sup>2</sup></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="real-wood-is">
+        <div class="container">
+            <div class="title">
+                <span>Realwood это</span>
+                <a href="#" class="std-btn">Станьте нашим партнёром</a>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <div class="property">
+                        <div class="property-icon vertical-align">
+                            <div class="team-icon icons-sprite"></div>
+                        </div>
+                        <div class="property-text">
+                            <span>Команда <br> профессионалов</span>
+                            <p>более 10 лет на рынке пиломатериалов</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6">
+                    <div class="property">
+                        <div class="property-icon vertical-align">
+                            <div class="factory-icon icons-sprite"></div>
+                        </div>
+                        <div class="property-text">
+                            <span>Сеть заводов <br> по всей России</span>
+                            <p>мы работаем во всех регионах России без задержек на доставку и транспортировку</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6">
+                    <div class="property">
+                        <div class="property-icon vertical-align">
+                            <div class="storage-icon icons-sprite"></div>
+                        </div>
+                        <div class="property-text">
+                            <span>500 м<sup>3</sup> леса <br> на складе</span>
+                            <p>Мы готовы выполнить заказ любого объема
+                                в кратчайшие сроки</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6">
+                    <div class="property">
+                        <div class="property-icon vertical-align">
+                            <div class="price-icon icons-sprite"></div>
+                        </div>
+                        <div class="property-text">
+                            <span>Низкие <br> цены</span>
+                            <p>Покупая у нас, вы не платите посредникам</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sales-leader">
+        <div class="container">
+            <div class="title">
+                <span>Лидеры продаж</span>
+                <a href="#" class="std-btn">Перейти в каталог</a>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <div class="top-sale">
+                        <div class="sale-img">
+                            <img src="img/special-offer-img1.jpg" alt="">
+                        </div>
+                        <div class="sale-text">
+                            <span>от 433 руб/м<sup>2</sup></span>
+                            <p>Массивная паркетная доска</p>
+                            <p>Массивная паркетная доска
+                                из отменных сортов дуба долго сохраняет свой цвет</p>
+                        </div>
+                        <a href="#" class="std-btn green">Узнать подробнее</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="top-sale">
+                        <div class="sale-img">
+                            <img src="img/top-sales-img-2.jpg" alt="">
+                        </div>
+                        <div class="sale-text">
+                            <span>от 768 руб/м<sup>2</sup></span>
+                            <p>Массивная паркетная доска</p>
+                            <p>Массивная паркетная доска
+                                из отменных сортов дуба долго сохраняет свой цвет</p>
+                        </div>
+                        <a href="#" class="std-btn green">Узнать подробнее</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="top-sale">
+                        <div class="sale-img">
+                            <img src="img/top-sales-img-3.jpg" alt="">
+                        </div>
+                        <div class="sale-text">
+                            <span>от 879 руб/м<sup>2</sup></span>
+                            <p>Массивная паркетная доска</p>
+                            <p>Массивная паркетная доска
+                                из отменных сортов дуба долго сохраняет свой цвет</p>
+                        </div>
+                        <a href="#" class="std-btn green">Узнать подробнее</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="top-sale">
+                        <div class="sale-img">
+                            <img src="img/top-sales-img-4.jpg" alt="">
+                        </div>
+                        <div class="sale-text">
+                            <span>от 1 243 руб/м<sup>2</sup></span>
+                            <p>Массивная паркетная доска</p>
+                            <p>Массивная паркетная доска
+                                из отменных сортов дуба долго сохраняет свой цвет</p>
+                        </div>
+                        <a href="#" class="std-btn green">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="make-sure">
+        <div class="container">
+            <div class="title">
+                <span>Уютный и комфортный дом это не так дорого. Убедитесь сами:</span>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="select-text">
+                                <span>Выбор материала:</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="select-group">
+                                <select name="" id="material">
+                                    <option value="" disabled selected>Выберите пиломатериал</option>
+                                    <option value="">Материал 1</option>
+                                    <option value="">Материал 2</option>
+                                    <option value="">Материал 3</option>
+                                    <option value="">Материал 4</option>
+                                </select>
+
+                                <select name="" id="length">
+                                    <option value="" disabled selected>Длина</option>
+                                    <option value="">1м</option>
+                                    <option value="">2м</option>
+                                    <option value="">3м</option>
+                                    <option value="">4м</option>
+                                    <option value="">5м</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="select-group">
+                                <select name="" id="sort">
+                                    <option value="" disabled selected>Выберите сорт</option>
+                                    <option value="">Сорт 1</option>
+                                    <option value="">Сорт 2</option>
+                                    <option value="">Сорт 3</option>
+                                    <option value="">Сорт 4</option>
+                                    <option value="">Сорт 5</option>
+                                </select>
+
+                                <select name="" id="width">
+                                    <option value="" disabled selected>Ширина</option>
+                                    <option value="">1м</option>
+                                    <option value="">2м</option>
+                                    <option value="">3м</option>
+                                    <option value="">4м</option>
+                                    <option value="">5м</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="select-text">
+                                <span>Укажите площадь помещения:</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="select-group">
+                                <select name="" id="length-room">
+                                    <option value="">Материал 1</option>
+                                    <option value="">Материал 2</option>
+                                    <option value="">Материал 3</option>
+                                    <option value="">Материал 4</option>
+                                    <option value="">Материал 5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="select-group">
+                                <select name="" id="width-room">
+                                    <option value="">Материал 1</option>
+                                    <option value="">Материал 2</option>
+                                    <option value="">Материал 3</option>
+                                    <option value="">Материал 4</option>
+                                    <option value="">Материал 5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <span class="actual-price">15 756 <span class="glyphicon glyphicon-ruble" aria-hidden="true"></span></span>
+                    <a href="#" class="std-btn green">Заказать подробный расчет</a>
                 </div>
             </div>
         </div>

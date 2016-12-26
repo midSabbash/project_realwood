@@ -1,23 +1,47 @@
 // standard button
 .std-btn {
-  padding: 10px 20px;
+  padding: 10px 19px;
   color: #659a00;
   border: 1px solid #659a00;
-  border-radius: 2px;
+  border-radius: 4px;
+  display: inline-block;
+  letter-spacing: 0.5px;
   background: transparent;
+  float: right;
   &:hover {
     color: #fff;
     background: #659a00;
   }
   &.green {
-    padding: 10px 20px;
+    padding: 10px 22px;
+    float: none;
     color: #fff;
     background: #659a00;
     border: 1px solid #659a00;
     &:hover {
-      background: #fff;
+      background: transparent;
       color: #659a00;
     }
+  }
+}
+
+.vertical-align::before{
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-left: -4px;
+}
+.vertical-align > *{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+//standard title
+.title {
+  margin-bottom: 27px;
+  span {
+    font-size: 1.8em;
   }
 }
 
@@ -28,7 +52,7 @@
   }
 }
 
-//button style
+//mobile button style
 .navbar-toggle {
   margin: 5px;
   width: 32px;
@@ -81,5 +105,73 @@
       top: 22px;
     }
   }
+}
+
+//slider
+.current-slide {
+  opacity: 1 !important;
+}
+
+.current-sm-slide {
+  img {
+    opacity: 1!important;
+  }
+}
+
+//form styler
+.jq-selectbox {
+  margin-top: 30px;
+}
+.input-style {
+  box-sizing: border-box;
+}
+.jq-selectbox {
+  width: 100%;
+  &:focus {
+    outline: none;
+  }
+  .jq-selectbox__select {
+    height: 35px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 4px;
+    -webkit-background: rgba(255,255,255,.4);
+    -moz-background: rgba(255,255,255,.4);
+    -ms-background: rgba(255,255,255,.4);
+    -o-background: rgba(255,255,255,.4);
+    background: rgba(255,255,255,.4);
+
+    box-shadow: none;
+    font-weight: 300;
+    color: #333;
+    text-shadow: none;
+  }
+  .jq-selectbox__select-text {
+    font-size: 1.21428em;
+    padding-top: 10px;
+    color: #fff;
+  }
+  .jq-selectbox__dropdown {
+    .disabled {
+      display: none;
+    }
+  }
+}
+.jq-selectbox {
+  li {
+    font-weight: 500;
+    color:  #000;
+    padding: 10px 20px 5px;
+    &:hover {
+      background-color: #ccc;
+    }
+  }
+}
+.jq-selectbox__dropdown {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+  background: #fff;
+  box-shadow: none;
 }
 

@@ -1,22 +1,44 @@
-$('#slide-11').click(function () {
-    var id = $(this).attr('id');
+//form styler
 
-    var slideTarget = $('[data-aim]')
+(function ($) {
+    $(function () {
+        $('select').styler();
+    });
+})(jQuery);
 
-    switch (id) {
 
 
-        case 'slide-11':
-            $(this).addClasss('current-mini-slide');
-            $('[data-aim="slide1"]').addClass('current-slide');
+$('[data-aim="slide"]').on('click', function () {
+
+    var attrId = $(this).attr('id');
+
+    switch (attrId) {
+
+        case 'item-1':
+            $(this).addClass('current-sm-slide');
+            $('#item-2').removeClass('current-sm-slide');
+            $('#item-3').removeClass('current-sm-slide');
+            $('#slide-1').addClass('current-slide');
+            $('#slide-2').removeClass('current-slide');
+            $('#slide-3').removeClass('current-slide');
             break;
 
-        case 'slide-22':
-            $(this).addClasss('current-slide');
+        case 'item-2':
+            $(this).addClass('current-sm-slide');
+            $('#item-1').removeClass('current-sm-slide');
+            $('#item-3').removeClass('current-sm-slide');
+            $('#slide-2').addClass('current-slide');
+            $('#slide-1').removeClass('current-slide');
+            $('#slide-3').removeClass('current-slide');
             break;
 
-        case 'slide-33':
-            $(this).addClass('current-slide');
+        case 'item-3':
+            $(this).addClass('current-sm-slide');
+            $('#item-1').removeClass('current-sm-slide');
+            $('#item-2').removeClass('current-sm-slide');
+            $('#slide-3').addClass('current-slide');
+            $('#slide-1').removeClass('current-slide');
+            $('#slide-2').removeClass('current-slide');
             break
     }
 });
