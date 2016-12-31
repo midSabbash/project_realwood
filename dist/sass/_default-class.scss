@@ -30,7 +30,6 @@
   display: inline-block;
   height: 100%;
   vertical-align: middle;
-  margin-left: -4px;
 }
 .vertical-align > *{
   display: inline-block;
@@ -39,9 +38,10 @@
 
 //standard title
 .title {
-  margin-bottom: 27px;
+  margin-bottom: 20px;
   span {
-    font-size: 1.8em;
+    font-size: 1.786em;
+    line-height: 1.5;
   }
 }
 
@@ -150,6 +150,9 @@
     font-size: 1.21428em;
     padding-top: 10px;
     color: #fff;
+    @media (max-width: 1199px) {
+      font-size: 1em;
+    }
   }
   .jq-selectbox__dropdown {
     .disabled {
@@ -174,4 +177,13 @@
   background: #fff;
   box-shadow: none;
 }
-
+.jq-selectbox__trigger-arrow {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #000;
+  position: absolute;
+  right: 12px;
+  top: 16px;
+}

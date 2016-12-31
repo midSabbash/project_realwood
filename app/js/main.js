@@ -7,7 +7,6 @@
 })(jQuery);
 
 
-
 $('[data-aim="slide"]').on('click', function () {
 
     var attrId = $(this).attr('id');
