@@ -8,40 +8,59 @@
   letter-spacing: 0.5px;
   background: transparent;
   float: right;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
   &:hover {
     color: #fff;
     background: #659a00;
+  }
+  @media (max-width: 550px) {
+    float: none;
   }
   &.green {
     padding: 10px 22px;
     float: none;
     color: #fff;
-    background: #659a00;
-    border: 1px solid #659a00;
+    background: #90bc3b;
+    border: 1px solid #90bc3b;
     &:hover {
       background: transparent;
-      color: #659a00;
+      color: #90bc3b;
     }
   }
 }
 
-.vertical-align::before{
+//vertical alignment elements
+.vertical-align::before {
   content: '';
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-.vertical-align > *{
+
+.vertical-align > * {
   display: inline-block;
   vertical-align: middle;
+  margin-left: -4px;
 }
 
 //standard title
 .title {
   margin-bottom: 20px;
+  @media (max-width: 550px) {
+    text-align: center;
+  }
   span {
     font-size: 1.786em;
     line-height: 1.5;
+    display: inline-block;
+    @media (max-width: 550px) {
+      width: 100%;
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -82,6 +101,7 @@
     }
   }
 }
+
 .navbar-toggle.collapsed {
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -114,7 +134,7 @@
 
 .current-sm-slide {
   img {
-    opacity: 1!important;
+    opacity: 1 !important;
   }
 }
 
@@ -122,9 +142,11 @@
 .jq-selectbox {
   margin-top: 30px;
 }
+
 .input-style {
   box-sizing: border-box;
 }
+
 .jq-selectbox {
   width: 100%;
   &:focus {
@@ -135,11 +157,11 @@
     padding-left: 20px;
     border: none;
     border-radius: 4px;
-    -webkit-background: rgba(255,255,255,.4);
-    -moz-background: rgba(255,255,255,.4);
-    -ms-background: rgba(255,255,255,.4);
-    -o-background: rgba(255,255,255,.4);
-    background: rgba(255,255,255,.4);
+    -webkit-background: rgba(255, 255, 255, .4);
+    -moz-background: rgba(255, 255, 255, .4);
+    -ms-background: rgba(255, 255, 255, .4);
+    -o-background: rgba(255, 255, 255, .4);
+    background: rgba(255, 255, 255, .4);
 
     box-shadow: none;
     font-weight: 300;
@@ -160,16 +182,18 @@
     }
   }
 }
+
 .jq-selectbox {
   li {
     font-weight: 500;
-    color:  #000;
+    color: #000;
     padding: 10px 20px 5px;
     &:hover {
       background-color: #ccc;
     }
   }
 }
+
 .jq-selectbox__dropdown {
   box-sizing: border-box;
   width: 100%;
@@ -177,6 +201,7 @@
   background: #fff;
   box-shadow: none;
 }
+
 .jq-selectbox__trigger-arrow {
   width: 0;
   height: 0;
@@ -186,4 +211,8 @@
   position: absolute;
   right: 12px;
   top: 16px;
+}
+
+.indent {
+  margin-bottom: 31px;
 }

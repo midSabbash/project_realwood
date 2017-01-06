@@ -3,7 +3,7 @@ body {
   color: #000;
   background: #fff;
   font: 14px/1 'Open Sans', sans-serif;
-  height: 5000px;
+
 }
 
 /* General reset */
@@ -11,26 +11,32 @@ img {
   border: none;
   max-width: 100%;
 }
+
 a {
   color: #000;
   text-decoration: none;
 }
+
 a:hover, a:focus, a:active {
   text-decoration: none;
   outline: none;
   color: #000;
 }
+
 ul {
   margin: 0;
   list-style: none;
   padding: 0;
 }
+
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
+
 input, button, textarea, select {
   outline: none;
 }
+
 button {
   border: none;
   background: none;
@@ -40,6 +46,7 @@ button {
     outline: none;
   }
 }
+
 input, select, textarea {
   border: none;
   background: none;

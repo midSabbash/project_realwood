@@ -107,7 +107,6 @@ header {
   .header-nav {
     background: #e6e6e6;
     position: relative;
-    margin-bottom: 39px;
     .open {
       @media (max-width: 767px) {
         position: absolute;
@@ -119,7 +118,7 @@ header {
         z-index: 99;
       }
     }
-    .container>.navbar-collapse{
+    .container > .navbar-collapse {
       margin: 0;
     }
     ul {
@@ -214,5 +213,174 @@ header {
         }
       }
     }
+  }
+}
+
+footer {
+  background: #998658;
+  padding: 42px 0 70px 0;
+  color: #fff;
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+  ul {
+    li {
+      & + li {
+        margin-top: 20px;
+        @media (max-width: 767px) {
+          margin-top: 10px;
+        }
+      }
+      a {
+        color: #fff;
+        font-weight: 300;
+        font-size: 1.071428em;
+        &:hover {
+          color: #a1ec0e;
+        }
+      }
+    }
+  }
+  .information {
+    padding: 14px 0 0 12px;
+    @media (max-width: 767px) {
+      margin-top: 30px;
+      padding: 0;
+    }
+    span {
+      font-size: 1.428571em;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 39px;
+      @media (max-width: 767px) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .contacts {
+    margin-left: 14px;
+    @media (max-width: 767px) {
+      margin: 30px 0 0 0;
+    }
+    .sm-logo {
+      background: url('../img/logo-for-footer.png');
+      display: inline-block;
+      width: 89px;
+      height: 52px;
+      margin-bottom: 26px;
+    }
+    .phone {
+      margin-bottom: 34px;
+      .media-mb {
+        @media (max-width: 1199px) {
+          margin-top: 20px;
+        }
+      }
+    }
+    .mail {
+      display: block;
+      margin-bottom: 35px;
+      color: #fff;
+      &:hover {
+        color: #a1ec0e;
+      }
+    }
+    .address {
+      li {
+        & + li {
+          margin-top: 6px;
+        }
+      }
+    }
+  }
+}
+
+//tickets
+.offer {
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  -ms-transition: all .1s linear;
+  -o-transition: all .1s linear;
+  transition: all .1s linear;
+  border: 1px solid #f2f2f2;
+  position: relative;
+  margin-bottom: 30px;
+  .offer-img {
+    img {
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+    }
+    .sell {
+      -webkit-transition: all .1s linear;
+      -moz-transition: all .1s linear;
+      -ms-transition: all .1s linear;
+      -o-transition: all .1s linear;
+      transition: all .1s linear;
+      font-weight: 300;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 14px 4px;
+      font-size: 1.42857em;
+      background: $LightGreenColor;
+      color: #fff;
+      @media (max-width: 550px) {
+        padding: 25px 20px;
+      }
+    }
+  }
+  .offer-text {
+    padding: 10px 17px 21px 20px;
+    @media (max-width: 1199px) {
+      padding: 15px 5px;
+    }
+    @media (max-width: 991px) {
+      padding: 10px;
+    }
+  }
+  p {
+    line-height: 1.5;
+    height: 44px;
+    font-size: 1.07142em;
+    margin-bottom: 24px;
+    @media (max-width: 1199px) {
+      height: 60px;
+    }
+  }
+  .current-price {
+    font-size: 1.42857em;
+    @media (max-width: 1199px) {
+      font-size: 1.2em;
+    }
+  }
+  .old-price {
+    font-size: 1.07142em;
+    color: #999;
+    text-decoration: line-through;
+    float: right;
+    margin-top: 4px;
+    @media (max-width: 1199px) {
+      font-size: 1.1em;
+    }
+  }
+  &:hover {
+    box-shadow: 5px 3px 10px rgba(0, 0, 0, .2);
+    .offer-img {
+      .sell {
+        font-size: 2.14285em;
+        padding: 22px 5px;
+        @media (max-width: 550px) {
+          padding: 30px 25px;
+        }
+      }
+    }
+  }
+  a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 }
